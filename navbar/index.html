@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="./css.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 
 <body>
     <nav>
         <div class="wrapper">
             <div class="logo"><a href="#">Codingnepan</a></div>
+            <input class="check-btn" type="radio" name="slide" id="menu-btn">
+            <input class='check-btn' type="radio" name="slide" id="cancel-btn">
             <ul class="nav-links">
+                <label for="cancel-btn" class="btn cancel-btn"> <i class="fas fa-times"></i></label>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Service</a></li>
                 <li>
-                    <a href="#">Dropdown</a>
+                    <a href="#" class="desktop-item">Dropdown</a>
+                    <input class="check-btn check1" type="checkbox" id='showDrop'>
+                    <label for="showDrop" class="mobile-item">Dropdown menu</label>
                     <ul class="drop-menu">
                         <li><a href="#">Dropdown Menu 1</a></li>
                         <li><a href="#">Dropdown Menu 2</a></li>
@@ -27,7 +31,9 @@
                         <li><a href="#">Dropdown Menu 4</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Mega Menu</a>
+                <li><a class="desktop-item" href="#">Mega Menu</a>
+                    <input class="check-btn check1" type="checkbox" id='showMega'>
+                    <label for="showMega" class="mobile-item">Mega Menu</label>
                     <div class="mega-box">
                         <div class="content">
                             <div class="row">
@@ -65,6 +71,7 @@
                 </li>
                 <li><a href="#">Feedback</a></li>
             </ul>
+            <label for="menu-btn" class="btn menu-btn"> <i class="fas fa-bars"></i></label>
         </div>
     </nav>
 </body>
